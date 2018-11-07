@@ -5,7 +5,7 @@ class Category(models.Model):
     slug = models.SlugField(max_length=100, db_index=True, unique=True)
 
     class Meta:
-        ordering = ['name']
+        ordering = ['title']
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
 
