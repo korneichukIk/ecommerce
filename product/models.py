@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 class Category(models.Model):
     title = models.CharField(max_length=100, db_index=True, verbose_name='Category title')
@@ -13,7 +14,7 @@ class Category(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        pass
+        return reverse('category_list_view', args=[self.slug])
 
 def upload_image(instance, filename):
     filename = instance.slug + '.' + filename.split('.')[1]
@@ -45,4 +46,4 @@ class Product(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        pass
+        return reverse('detail_view', args=[self.category.slug, self.slug])
