@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6272a8e-7789-426a-ab73-7312f9802a81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/order/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/templates/created.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/celery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/templates/cart_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/cart_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Pillow-5.3.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Pillow-5.3.0.dist-info/RECORD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,30 +27,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2342" />
-          <entry key="py" value="5852" />
-          <entry key="txt" value="140" />
+          <entry key="html" value="2347" />
+          <entry key="py" value="6512" />
+          <entry key="txt" value="194" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2342" />
-          <entry key="PLAIN_TEXT" value="140" />
-          <entry key="Python" value="5852" />
+          <entry key="HTML" value="2347" />
+          <entry key="PLAIN_TEXT" value="194" />
+          <entry key="Python" value="6512" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
           <entry key="html" value="17" />
-          <entry key="py" value="35" />
+          <entry key="py" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="17" />
-          <entry key="Python" value="35" />
+          <entry key="Python" value="39" />
         </counts>
       </usages-collector>
     </session>
@@ -82,11 +79,42 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/order/templates/create.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+              <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="37" selection-start-column="37" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1541782754421" expanded="true" signature="125:130" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="132" column="64" selection-start-line="132" selection-start-column="64" selection-end-line="132" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -117,14 +145,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/order/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="285">
+              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
-                <marker date="1541781207538" expanded="true" signature="180:185" ph="..." />
+                <marker date="1541783013627" expanded="true" signature="213:218" ph="..." />
               </folding>
             </state>
           </provider>
@@ -144,8 +172,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -179,15 +207,18 @@
         <option value="$PROJECT_DIR$/product/templates/detail.html" />
         <option value="$PROJECT_DIR$/product/views.py" />
         <option value="$PROJECT_DIR$/order/models.py" />
-        <option value="$PROJECT_DIR$/shop/settings.py" />
         <option value="$PROJECT_DIR$/order/admin.py" />
         <option value="$PROJECT_DIR$/order/forms.py" />
         <option value="$PROJECT_DIR$/order/urls.py" />
         <option value="$PROJECT_DIR$/shop/urls.py" />
         <option value="$PROJECT_DIR$/product/templates/cart_detail.html" />
         <option value="$PROJECT_DIR$/order/templates/created.html" />
-        <option value="$PROJECT_DIR$/order/views.py" />
         <option value="$PROJECT_DIR$/order/templates/create.html" />
+        <option value="$PROJECT_DIR$/shop/celery.py" />
+        <option value="$PROJECT_DIR$/shop/__init__.py" />
+        <option value="$PROJECT_DIR$/order/tasks.py" />
+        <option value="$PROJECT_DIR$/shop/settings.py" />
+        <option value="$PROJECT_DIR$/order/views.py" />
       </list>
     </option>
   </component>
@@ -197,7 +228,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
@@ -228,17 +259,6 @@
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -373,7 +393,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541779790357</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create simple make_order page">
+      <created>1541781528871</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1541781528871</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add template for order">
+      <created>1541782047710</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1541782047710</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -389,7 +423,7 @@
     <frame x="67" y="25" width="927" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24971624" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30987513" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -403,7 +437,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32972974" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -447,7 +481,9 @@
     <MESSAGE value="Start Cart App" />
     <MESSAGE value="Create Cart Class" />
     <MESSAGE value="Create Order Application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Order Application" />
+    <MESSAGE value="create simple make_order page" />
+    <MESSAGE value="add template for order" />
+    <option name="LAST_COMMIT_MESSAGE" value="add template for order" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/product/admin.py">
@@ -532,13 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/order/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -607,13 +636,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order/views.py">
+    <entry file="file://$PROJECT_DIR$/shop/celery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="90">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
-            <marker date="1541781207538" expanded="true" signature="180:185" ph="..." />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -621,7 +649,43 @@
     <entry file="file://$PROJECT_DIR$/order/templates/create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+          <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="132" column="64" selection-start-line="132" selection-start-column="64" selection-end-line="132" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1541782754421" expanded="true" signature="125:130" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+            <marker date="1541783013627" expanded="true" signature="213:218" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
