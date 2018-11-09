@@ -5,6 +5,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('order/', include('order.urls')),
+    path('payment/', include('payment.urls')),
+    path('paypal/', include('paypal.standard.ipn.urls')),
     path('admin/', admin.site.urls),
     path('', include('product.urls')),
 ]
