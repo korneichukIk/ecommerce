@@ -1,2 +1,61 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block title %}
+    Cart
+{% endblock %}
+
+{% block content %}
+    <br>
+    <h3 class="text-center">Your Cart</h3>
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="text-center"><strong>Image</strong></th>
+                <th class="text-center"><strong>Product</strong></th>
+                <th class="text-center"><strong>Amount</strong></th>
+                <th class="text-center"><strong>Price</strong></th>
+                <th class="text-center"><strong>Delete</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in cart %}
+                {% with product=item.product %}
+                    <tr>
+                        <td class="text-center">
+                            <a href="{{ product.get_absolute_url }}">
+                                <img src="{{ product.image.url }}">
+                            </a>
+                        </td>
+                        <td class="text-center">{{ product.title }}</td>
+                        <td class="text-center">
+                            <form action="{% url 'add' product.id %}" method="post">
+                                {{ item.update_amount_form.amount }}
+                                {{ item.update_amount_form.update }}
+                                {% csrf_token %}
+                                <input type="submit" value="Refresh">
+                            </form>
+                        </td>
+                        <td class="text-center">${{ product.price }}</td>
+                        <td class="text-center">
+                            <a href="{% url 'remove' product.id %}">Remove</a>
+                        </td>
+                    </tr>
+                {% endwith %}
+            {% endfor %}
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="text-center"><strong>Total: </strong></td>
+                <td class="text-center"><strong>${{ cart.get_total_price|floatformat:"2" }}</strong></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="text-right">
+        <a href="{% url 'list_view' %}" class="btn btn-block btn-light">Continue Shopping</a>
+        <a href="#" class="btn btn-block btn-success">Checkout</a>
+    </p>
+{% endblock %}

@@ -27,7 +27,11 @@
                             {% lorem %}
                             {% lorem %}
                         </p>
-                        <a class="text-warning btn btn-block btn-danger" href="#">Add to Cart</a>
+                        <form action="{% url 'add' product.id %}" method="post">
+                            {{ cart_add_form }}
+                            {% csrf_token %}
+                            <input type="submit" class="btn btn-block btn-danger" value="Add to Cart">
+                        </form>
                     </div>
 
                     <div class="card card-outline-secondary my-4">

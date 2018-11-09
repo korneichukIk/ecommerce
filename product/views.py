@@ -23,14 +23,16 @@ def list_view(request, category_slug = None):
 def detail_view(request, category_slug, slug):
     product = get_object_or_404(Product, slug = slug, category__slug = category_slug)
     categories = Category.objects.all()
+    cart_product_form = cart_add_form()
 
     context = {'product': product,
-               'categories': categories
+               'categories': categories,
+               'cart_add_form': cart_product_form,
     }
     return render(request, 'detail.html', context)
 
 @require_POST
-def add_to_cart(request, product_id, amount, update):
+def add_to_cart(request, product_id):
     cart = Cart(request)
     product = get_object_or_404(Product, id = product_id)
     form = cart_add_form(request.POST)
